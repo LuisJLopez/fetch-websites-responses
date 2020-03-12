@@ -1,7 +1,7 @@
 ## :rocket: Fetch Request/Response data from URLs
 
 #### Description:
-- Asynchronous small &amp; lightweight web application that requests and displays the response data using bottle/templates.
+- Asynchronous small and lightweight web application that requests and displays the response data using bottle/templates.
 
 #### App view & Teminal view:
 ![Web App View](project/static/demo.gif)
