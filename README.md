@@ -1,12 +1,12 @@
-## :rocket: Get Response data from URLs
+## :rocket: Fetch Request/Response data from URLs
 
 #### Description:
-- Asynchronous small &amp; lightweight web app that fetches response data and displays it using bottle/templates.
+- Asynchronous small &amp; lightweight web application that requests and displays the response data using bottle/templates.
 
 #### App view & Teminal view:
 ![Web App View](project/static/demo.gif)
 
-#### How to run:
+#### How to run it:
 - You will need a python version equal or higher to 3.7
 - Clone the repo:
 `git clone git@github.com:LuisJLopez/get-response-data.git`
