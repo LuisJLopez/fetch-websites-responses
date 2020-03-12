@@ -1,5 +1,5 @@
 ### get-simple-website-stats
-
+![Farmers Market Finder Demo](project/static/demo.gif)
 #### Description:
 - Asynchronous small &amp; lightweight web app that fetches response data and displays it using bottle/template.
 
