@@ -12,7 +12,7 @@
 `git clone git@github.com:LuisJLopez/get-response-data.git`
 - Then install the required packages by running:
 `pip install -r requirements.txt`
-- Once packages have been install run:
+- Once the packages have been installed, run:
 `python project` to start bottle.
 
 
