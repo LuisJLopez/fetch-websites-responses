@@ -1,18 +1,20 @@
-### get-simple-website-stats
+## :rocket: Fetch Request/Response data from URLs
 
 #### Description:
-- Asynchronous small &amp; lightweight web app that fetches response data and displays it using bottle/template.
+- Asynchronous small and lightweight web application that requests and displays the response data using bottle/templates.
 
-#### How to run:
-- You will need a python version equal or higher to 3.7
-- Git clone
-- pip install requirements.txt
-- python project 
-
-
-#### App view:
+#### Application View and Teminal View:
 ![Web App View](project/static/demo.gif)
 
+#### How do I run it?
+- You will need python version 3.7 or higher.
+- Clone the repo:
+`git clone git@github.com:LuisJLopez/get-response-data.git`
+- Then install the required packages by running:
+`pip install -r requirements.txt`
+- Once the packages have been installed, run:
+`python project` to start bottle.
 
-#### Terminal view:
-![Terminal View](project/static/terminal-view.gif)
+
+
+
