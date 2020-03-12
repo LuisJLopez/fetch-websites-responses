@@ -10,9 +10,6 @@
 - python project 
 
 
-#### App view:
+#### App view & Teminal view:
 ![Web App View](project/static/demo.gif)
 
-
-#### Terminal view:
-![Terminal View](project/static/terminal-view.gif)
