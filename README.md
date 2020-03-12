@@ -1,4 +1,5 @@
-## get-response-data :rocket: :rocket:
+:rocket:
+## get-response-data
 
 #### Description:
 - Asynchronous small &amp; lightweight web app that fetches response data and displays it using bottle/template.
