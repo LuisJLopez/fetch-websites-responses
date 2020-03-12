@@ -3,5 +3,10 @@
 #### Description:
 - A asynchronous small &amp; lightweight web app that fetches request/response stats.
 
-#### Video:
+#### Gif:
+
+
+
+#### How to run:
+- You will need a python version equal or higher to 3.7
 
