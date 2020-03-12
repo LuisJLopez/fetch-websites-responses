@@ -46,7 +46,7 @@
       <tr>
         <td>{{ row['url'] }}</td>
         <td>{{ row['method'] }}</td>
-        <td>{{ row['response_code']}}</td>
+        <td>{{ row['status_code']}}</td>
         <td>{{ row['response_time'] }}</td>
         <td>{{ row['size'] }}</td>
       </tr>

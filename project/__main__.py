@@ -13,7 +13,7 @@ async def get_request_data(url: str, session: aiohttp.ClientSession) -> dict:
     try:
         response = await session.request(method="GET", url=url, timeout=10)
     except aiohttp.ClientConnectorError:
-        return {'url': url, 'response_code': response.status}
+        return {'url': url, 'status_code': response.status}
     end = time.time()
     response_time: float = round(end - start, 4)
     html: str = await response.text()
@@ -23,7 +23,7 @@ async def get_request_data(url: str, session: aiohttp.ClientSession) -> dict:
         'url': url,
         'method': response.method,
         'html': html,
-        'response_code': response.status,
+        'status_code': response.status,
         'response_time': response_time,
         'size': response.content_length,
     }
