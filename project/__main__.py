@@ -2,10 +2,11 @@ import aiohttp
 import asyncio
 import time
 
-from bottle import route, run, template
+from bottle import Bottle, route, run, template
 from constants import URLS
 from settings import DEBUG, HOST, PORT, RELOADER
 
+app = Bottle()
 
 async def get_request_data(url: str, session: aiohttp.ClientSession) -> dict:
     print(f"Requesting {url}")
@@ -39,15 +40,15 @@ async def get_website_analytics(urls: set) -> list:
         return await asyncio.gather(*tasks)
 
 
-@route('/', method='GET')
-@route('/<filter>', method='GET')
+@app.route('/', method='GET')
+@app.route('/<filter>', method='GET')
 def main(filter='response_time'):
     data: list = asyncio.run(get_website_analytics(urls=URLS))
     sorted_data: list = sorted(data, key=lambda i: i[filter])
 
     return template('project/views/index.tlp', data=sorted_data)
 
-run(host=HOST, port=PORT, debug=DEBUG, reloader=RELOADER)
+run(app, host=HOST, port=PORT, debug=DEBUG, reloader=RELOADER)
 
 if __name__ == "__main__":
     """Script requires Python 3.7+"""
